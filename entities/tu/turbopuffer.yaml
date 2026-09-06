@@ -53,7 +53,8 @@ offers:
               minor_units: 819200
             kind: up-to
           duration:
-            kind: unknown
+            kind: up-to
+            value: P1Y
       consideration:
         kind: none
     eligibility:
