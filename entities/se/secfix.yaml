@@ -1,0 +1,77 @@
+schema_version: sourcey.entity-authoring/v1alpha1
+entity:
+  entity_id: ent_01m1temg3ay206qj9a88gk9ftn
+  slug: secfix
+  slug_aliases: []
+  name: Secfix
+  domains:
+    - value: secfix.com
+      role: primary
+      valid_from: 2026-09-06T03:20:00.000Z
+  category: legal-compliance
+profile:
+  description: Secfix automates security compliance for startups and SMEs,
+    covering ISO 27001, SOC 2, TISAX, GDPR, and related frameworks.
+  links:
+    site: https://www.secfix.com
+sources:
+  - source_id: src_621a2bc29ed041e28c5ca8e61b06a3225b905bd8ebde96f3cc80d5f7e4476f39
+    url: https://www.secfix.com/demo/google-for-startups
+programs:
+  - program_id: prg_01m1temg3a8xt70psqj7bzevz8
+    program_slug: secfix-google-for-startups-partnership
+    program_slug_aliases: []
+    title: Secfix Google for Startups Partnership
+    summary: A Secfix partnership with Google for Startups offering a
+      first-year discount to program members.
+    source_ids:
+      - src_621a2bc29ed041e28c5ca8e61b06a3225b905bd8ebde96f3cc80d5f7e4476f39
+offers:
+  - offer_id: off_01m1temg3bhvzf0d6j1p3ybcst
+    program_id: prg_01m1temg3a8xt70psqj7bzevz8
+    offer_slug: google-members-first-year-discount
+    offer_slug_aliases: []
+    title: 15% off Secfix for the first year
+    summary: Google for Startups members get 15% off their first year of
+      Secfix security and compliance automation software.
+    lifecycle:
+      status: active
+      effective_from: 2026-09-06T03:20:00.000Z
+    economics:
+      benefits:
+        - benefit_id: ben_first_year_discount
+          kind: discount
+          description: 15% off the first year of Secfix security and compliance
+            automation software, plus a free consultation with Secfix experts.
+          percentage:
+            kind: exact
+            basis_points: 1500
+          duration:
+            kind: exact
+            value: P1Y
+          applies_to: Secfix subscription plans
+      consideration:
+        kind: unknown
+        description: A paid Secfix subscription at the discounted price is
+          required; after the first year regular pricing applies.
+    eligibility:
+      rule:
+        kind: all
+        rules:
+          - criterion_id: cri_program_membership
+            kind: manual
+            reason: external-verification
+            statement: Must be a Google for Startups member booking the
+              consultation through the partnership page.
+    roles:
+      terms_authority_entity_id: ent_01m1temg3ay206qj9a88gk9ftn
+      access_operator_entity_id: ent_01m1temg3ay206qj9a88gk9ftn
+    access:
+      availability: public
+      method: form
+      url: https://www.secfix.com/demo/google-for-startups
+      instructions: Book a free consultation on the Secfix Google for Startups
+        page with a work email to claim the discount.
+    terms_url: https://www.secfix.com/demo/google-for-startups
+    source_ids:
+      - src_621a2bc29ed041e28c5ca8e61b06a3225b905bd8ebde96f3cc80d5f7e4476f39
