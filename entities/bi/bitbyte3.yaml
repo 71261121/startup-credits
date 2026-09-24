@@ -38,21 +38,20 @@ offers:
     economics:
       consideration:
         kind: variable
-        description: The startup pays the discounted first-year plan price, for example Starter at USD 224 per month instead of USD 299; yearly billing includes an additional 10% off.
+        description: The startup receives 25% off any plan for its first year.
       benefits:
         - benefit_id: ben_plan_discount
           kind: discount
-          description: First-year startup discount of 25% on Starter, Growth or Business, monthly or yearly.
+          description: 25% off any plan for your first year.
           percentage:
             kind: exact
             basis_points: 2500
           duration:
             kind: exact
             value: P1Y
-          applies_to: Starter, Growth and Business plans
         - benefit_id: ben_customization_help
           kind: other
-          description: Customization help during the first year, with help scoping videos, pricing and the homepage for a web-first launch.
+          description: Customization help during your first year.
     eligibility:
       rule:
         kind: all
